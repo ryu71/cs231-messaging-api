@@ -1,2 +1,2 @@
 
-web: sh -c 'cd ./src/drfapi/drfapi/ && daphne asgi:application'
+web: sh -c 'cd ./src/drfapi && daphne drfapi.asgi:application'
