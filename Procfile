@@ -1,2 +1,2 @@
 
-web: gunicorn drfapi:app
+web: daphne src.drfapi.drfapi.asgi:application
