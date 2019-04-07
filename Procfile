@@ -1,2 +1,2 @@
 
-web: daphne -chdir src/drfapi drfapi.asgi:application
+web: daphne --chdir src/drfapi drfapi.asgi:application
