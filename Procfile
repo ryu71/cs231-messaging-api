@@ -1,2 +1,2 @@
 
-web: daphne --root-path=./src/drfapi/drfapi asgi:application
+web: sh -c 'cd ./src/drfapi/drfapi/ && daphne asgi:application'
