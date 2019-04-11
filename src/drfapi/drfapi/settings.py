@@ -27,6 +27,7 @@ SECRET_KEY = '18#=$o(eg3o)51am!k-q8$avi0qa8g(to#6dpwq*g!!dxp5&e$'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'text-message-api.herokuapp.com',
 ]
 

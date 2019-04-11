@@ -5,7 +5,7 @@ class MessagesForm(forms.ModelForm):
     class Meta:
         model = Messages
         fields = [
-            'user',
+            # 'user',
             'email',
             'message',
             'content',

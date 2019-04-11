@@ -10,7 +10,7 @@ urlpatterns = [
 
     url(r'^events/', AuthMiddlewareStack(
         URLRouter(django_eventstream.routing.urlpatterns)
-        ), {'channels': ['test']}),
+        ), {'channels': ['main']}),
     url(r'', AsgiHandler),
 
 ]

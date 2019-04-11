@@ -39,7 +39,7 @@ class MessagesCreateAPIView(generics.CreateAPIView):
     queryset                = Messages.objects.all()
 
     def perform_create(self, serializer):
-        send_event('test', 'message', {'text': 'hello_world'})
+        send_event('main', 'message', {'text': 'new message posted'})
         serializer.save()
 
 class MessagesDetailAPIView(generics.RetrieveAPIView):
