@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-import dj_database_url
-# import django_heroku
+# import dj_database_url
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,8 +29,8 @@ SECRET_KEY = '18#=$o(eg3o)51am!k-q8$avi0qa8g(to#6dpwq*g!!dxp5&e$'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'text-message-api.herokuapp.com',
+    # '127.0.0.1',
+    # 'text-message-api.herokuapp.com',
 ]
 
 
@@ -109,7 +109,7 @@ DATABASES = {
 #     }
 # }
 
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 
 # Password validation
@@ -159,4 +159,4 @@ STATICFILES_DIRS = (
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
