@@ -19,4 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/messageapp/', include('messageapp.api.urls')),
+    url(r'^auth_api/messageapp/', include('messageapp.auth_api.urls')),
+    url(r'^auth_api/accounts/', include('accounts.auth_api.urls')),
 ]
