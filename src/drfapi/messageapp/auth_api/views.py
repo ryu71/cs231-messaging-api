@@ -25,7 +25,7 @@ class MessagesAPIView(generics.ListAPIView):
     def get_queryset(self):
         request = self.request
         print("user:", request.user)
-        queryset = Messages.objects.all()
+        queryset = Messages.objects.all().order_by('id')
         query = self.request.GET.get('q')
         if query:
             queryset = queryset.filter(message__icontains=query)
