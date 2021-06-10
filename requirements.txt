@@ -9,7 +9,7 @@ chardet==3.0.4
 constantly==15.1.0
 daphne==2.2.5
 dj-database-url==0.5.0
-Django==1.11.20
+Django==2.2.24
 django-eventstream==2.5.0
 django-filter==2.1.0
 django-grip==2.0.0
